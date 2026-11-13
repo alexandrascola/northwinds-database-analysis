@@ -27,12 +27,12 @@ To prevent invalid business data at the database level, the schema enforces:
 * **Referential Integrity**: Enforces foreign key constraints across schemas (linking campaigns and follow-ups to `public.employees`, `public.customers`, and `public.products`) with `ON DELETE CASCADE` rules on dependent campaign notes.
 
 ## Repository Contents
-* `northwinds_backup.sql` — Complete PostgreSQL 18 plain-text database dump including custom schemas, tables, views, constraints, and sample records.
+* `northwinds_schema.sql` — Complete PostgreSQL 18 plain-text database dump including custom schemas, tables, views, constraints, and sample records.
 
 ## How to Run This Project
 1. Open **pgAdmin 4** (or `psql`) connected to a **PostgreSQL 18** server.
 2. Create a new empty database named `northwinds`.
-3. Restore or execute the `northwinds_backup.sql` script to build the `public` and `northwind_marketing` schemas and populate the data.
+3. Restore or execute the `northwinds_schema.sql` script to build the `public` and `northwind_marketing` schemas and populate the data.
 4. Query `SELECT * FROM northwind_marketing.campaign_summary;` to view the aggregated campaign report.
 
 ###ERD
