@@ -34,3 +34,6 @@ To prevent invalid business data at the database level, the schema enforces:
 2. Create a new empty database named `northwinds`.
 3. Restore or execute the `northwinds_backup.sql` script to build the `public` and `northwind_marketing` schemas and populate the data.
 4. Query `SELECT * FROM northwind_marketing.campaign_summary;` to view the aggregated campaign report.
+
+###ERD
+![Database ERD](northwind_marketing_erd.png)
